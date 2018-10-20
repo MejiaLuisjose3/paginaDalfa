@@ -1,0 +1,24 @@
+body{
+	background: url("../img/cielo.jpg");
+	background-attachment: fixed;
+}
+#menu{
+	background: #124FE8;
+}
+#logo{
+	background: #0B1487;
+}
+.button-more{
+	background: #0B1487;
+}
+.button-more:hover{
+	background: #218EFF;
+}
+#menu ul li:hover{
+	background: #218EFF;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: #0B1487 !important;
+}
+
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--<script type="text/javascript" src="../6-bloque/js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script type="text/javascript" src="../6-bloque/js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>-->
+
+	<!--JQuery-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		
+		var localcolore=localStorage.getItem("colores");
+		coloresls(localcolore);
+
+		
+		function coloresls(color) {
+			
+			var colores=$("head");
+			switch(color)
+			{
+				case 'rojo':
+			//colores.attr("href","css/red.css");
+			colores.append('<link id="css" rel="stylesheet" href="css/red.css">')
+			break;
+			case 'azul':
+			//colores.attr("href","css/blue.css");
+			colores.append('<link rel="stylesheet" href="css/blue.css">')
+			break;
+			case 'verde':
+			//colores.attr("href","css/green.css");
+			colores.append('<link id="css" rel="stylesheet" href="css/green.css">')
+			break;
+			default:
+			colores.append('<link id="css" rel="stylesheet" href="css/blue.css">')
+			break;
+		}
+	}
+
+
+</script>
+<script>
+	//cambiar colores
+
+	
+	var localcolore=localStorage.getItem("colores");
+	coloresls(localcolore);
+
+	$("#rojo").click(function() 
+	{
+		localStorage.setItem("colores","rojo");
+		coloresls("rojo");
+	});
+	$("#Azul").click(function() 
+	{
+		localStorage.setItem("colores","azul");
+		coloresls("azul");
+	});
+	$("#verde").click(function() 
+	{
+		localStorage.setItem("colores","verde");
+		coloresls("verde");
+	});
+
+	function coloresls(color) {
+		
+		var colores=$("head");
+		switch(color)
+		{
+			case 'rojo':
+			//colores.attr("href","css/red.css");
+			colores.append('<link id="css" rel="stylesheet" href="css/red.css">')
+			break;
+			case 'azul':
+			//colores.attr("href","css/blue.css");
+			colores.append('<link rel="stylesheet" href="css/blue.css">')
+			break;
+			case 'verde':
+			//colores.attr("href","css/green.css");
+			colores.append('<link id="css" rel="stylesheet" href="css/green.css">')
+			break;
+			default:
+			colores.append('<link id="css" rel="stylesheet" href="css/blue.css">')
+			break;
+		}
+	}
+
+
+</script>
+
+<!--JQuery UI-->
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="js/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="js/jquery-ui.theme.min.css">
+
+<!--Mi archivo-->
+<script type="text/javascript" src="js/about.js"></script>
+
+</head>
+<body>
+	<div id="cambiar">
+		<div id="Azul"></div>
+		<div id="rojo"></div>
+		<div id="verde"></div>
+	</div>
+
+	<section id="global">
+		<header>
+			<div id="logo">
+				<h1 >Primer proyecto</h1>
+			</div>
+			<div class="clearfix"></div>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="proyecto.html">Proyectos</a></li>
+					<li><a href="reloj.html">Reloj</a></li>
+					<li><a href="#">Sobre mi</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<section id="content">
+			<div id="box">
+				<h2>Sobre mi</h2>
+				<div id="acordeon">
+					<h3>Mision</h3>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis accusantium, laudantium perspiciatis porro, ratione voluptatibus cumque, nostrum magnam consequatur provident eveniet illum pariatur est. Alias cumque sunt laudantium delectus deleniti.</p>
+					</div>
+					<h3>Vision </h3>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis accusantium, laudantium perspiciatis porro, ratione voluptatibus cumque, nostrum magnam consequatur provident eveniet illum pariatur est. Alias cumque sunt laudantium delectus deleniti.</p>
+					</div>
+					<h3>Valores</h3>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis accusantium, laudantium perspiciatis porro, ratione voluptatibus cumque, nostrum magnam consequatur provident eveniet illum pariatur est. Alias cumque sunt laudantium delectus deleniti.</p>
+					</div>
+
+				</div>
+			</div>
+
+			<aside id="sidebar">
+				<div id="about">
+					<h4><span>Quien Soy?</span></h4>
+					<img src="img/caracol.jpg" alt="Imagen de mi">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos pariatur repudiandae dolorem. Iusto commodi at, doloribus deleniti quo optio unde suscipit veritatis. Architecto consectetur ut totam soluta, repudiandae aperiam reiciendis.</p>
+
+				</div>
+
+				<div id="login">
+					<h4><span>Identificate</span></h4>
+					<form action="index.html">
+						<label for="name">Nombre</label>
+						<input type="text" id="name">
+						<label for="email">Correo</label>
+						<input type="email" id="email">
+						<label for="password">Contraseña</label>
+						<input type="password" id="password">
+						<input type="submit" value="Enviar">
+					</form>
+
+				</div>
+
+			</aside>
+			<div class="clearfix"></div>
+		</section>
+
+	</section>
+	<footer>
+		Master Community Tech &copy; <a class="subir"  href="#">Ir arriba</a>
+	</footer>
+</body>
+</html>

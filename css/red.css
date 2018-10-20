@@ -1,0 +1,23 @@
+body{
+	background: url("../img/rojo.jpg");
+	background-attachment: fixed;
+}
+#menu{
+	background: #A41515;
+}
+#menu ul li:hover{
+	background: #F87979;
+}
+
+#logo{
+	background: #6A0303;
+}
+.button-more{
+	background:  #A41515;
+}
+.button-more:hover{
+	background: #F87979;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: #6A0303 !important;
+}

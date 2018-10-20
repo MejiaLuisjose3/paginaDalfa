@@ -1,0 +1,22 @@
+body{
+	background: url("../img/hojas.jpg");
+	background-attachment: fixed;
+}
+#menu{
+	background:#39883c;
+}
+#logo{
+	background: #07540a;
+}
+.button-more{
+	background: #39883c;
+}
+.button-more:hover{
+	background: #67F596;
+}
+#menu ul li:hover{
+	background: #67F596;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: #07540a !important;
+}
